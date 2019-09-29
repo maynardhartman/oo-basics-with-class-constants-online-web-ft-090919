@@ -18,6 +18,6 @@ class Shoe
       BRANDS.each { |brand|
       if brand != @brand then
         BRANDS << brand
+      end
       }
-  end
 end
