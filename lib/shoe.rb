@@ -6,7 +6,7 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS << brand
+    # BRANDS << brand
   end
 
   def cobble
@@ -15,5 +15,8 @@ class Shoe
   end
   def brand=(brand)
     @brand = brand
+    @brand.each { |brand|
+      if brand.unique then BRAND << brand
+    end
   end
 end
