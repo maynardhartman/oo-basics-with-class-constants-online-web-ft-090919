@@ -15,9 +15,9 @@ class Shoe
   end
   def brand=(brand)
     @brand = brand
-    @brand.each { |brand|
-      if brand.unique then BRAND << brand
-    end
-    }
+      BRANDS.each { |brand|
+      if brand != @brand then
+        BRANDS << brand
+      }
   end
 end
