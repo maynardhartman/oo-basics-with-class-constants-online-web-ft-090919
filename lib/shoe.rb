@@ -17,7 +17,7 @@ class Shoe
     @brand = brand
     @brand.each { |brand|
       if brand.unique then BRAND << brand
-    }
     end
+    }
   end
 end
