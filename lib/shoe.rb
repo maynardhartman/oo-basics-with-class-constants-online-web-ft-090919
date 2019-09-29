@@ -7,7 +7,6 @@ class Shoe
   def initialize(brand)
     @brand = brand
     if BRANDS.last == brand then
-      next
     else
       BRANDS << brand
     end
