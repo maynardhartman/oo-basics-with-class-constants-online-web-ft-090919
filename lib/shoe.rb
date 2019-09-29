@@ -7,9 +7,6 @@ class Shoe
   def initialize(brand)
     @brand = brand
     BRANDS << brand
-    if BRANDS.include?(@brand) then
-      BRANDS.pop
-    end
   end
 
   def cobble
